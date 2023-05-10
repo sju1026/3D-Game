@@ -67,8 +67,8 @@ public class Enemy : MonoBehaviour
     {
         if (!isDead && enemyType != Type.D)
         {
-            float targetRadius = 1.5f;
-            float targetRange = 3f;
+            float targetRadius = 0;
+            float targetRange = 0;
 
             switch (enemyType)
             {
@@ -176,6 +176,7 @@ public class Enemy : MonoBehaviour
     {
         foreach (MeshRenderer mesh in mashs)
             mesh.material.color = Color.red;
+
         yield return new WaitForSeconds(0.1f);
 
         if (curHealth > 0)

@@ -31,8 +31,10 @@ public class Boss : Enemy
         if (isDead)
         {
             StopAllCoroutines();
+            this.gameObject.SetActive(false);
             return;
         }
+
         if (isLook)
         {
             float h = Input.GetAxisRaw("Horizontal");
@@ -47,7 +49,7 @@ public class Boss : Enemy
 
     IEnumerator Think()
     {
-        yield return new WaitForSeconds(0.01f);
+        yield return new WaitForSeconds(0.1f);
 
         int ranAction = Random.Range(0, 5);
         switch (ranAction)
@@ -69,7 +71,6 @@ public class Boss : Enemy
                 StartCoroutine(Taunt());
                 break;
         }
-        Debug.Log("Think : " + ranAction);
     }
 
     IEnumerator MissileShot()
@@ -114,7 +115,7 @@ public class Boss : Enemy
         meleeArea.enabled = true;
 
         yield return new WaitForSeconds(0.5f);
-        meleeArea.enabled = true;
+        meleeArea.enabled = false;
 
         yield return new WaitForSeconds(1f);
         isLook = true;
