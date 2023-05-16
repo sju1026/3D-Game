@@ -1,0 +1,19 @@
+Grenade
+
+- Start() : Explosion 호출
+- IEnumerator Explosion() : 3s 후 속도와 회전 정지 및 폭발, 범위 및 Enemy만 피격설정, 5s 후 삭제
+
+IItem
+
+- enum Type : 아이템 리스트
+- Update() : 아이템 프리팹 회전설정
+- OnCollisionEnter() : IK및 SpherCollider 비활성화
+
+Missile
+
+- Update() : 발사하면서 돌아가는 회전설정
+
+Orbit : 시작화면 회전설정
+
+- Start() : offset 설정
+- Update() : 회전설정

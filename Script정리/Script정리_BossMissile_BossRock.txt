@@ -1,0 +1,10 @@
+BossMissile (Bullet 상속)
+
+- Awake() :  NavMeshAgent 스크립트 연결
+- Update() :  목적지 설정
+
+BossRock (Bullet 상속)
+
+- Awake() : StartCouroutine : 코루틴 시작설정
+- IEnumerator GainPowerTimer() :  시간 텀 및 초기화
+- IEnumerator GainTimer() : isShoot이 false일 때 설정

@@ -1,0 +1,10 @@
+Enemy
+
+- ChaseStart() : Target 추적 시작
+- Update() : 목적지 설정
+- FreezeVelocity() : 추적시 속도와 회전 고정
+- Targeting() : Targeting 범위를 각 Enemy에 따라 설정 및 공격
+- Attack() : 추적 취소 및 공격 시작 : 타입에 따른 공격시간 설정 및 초기화
+- OnTriggerEnter() : 사용자의 무기에 따른 피격설정
+- HitByGrenage() : 수류판 피격 설정
+- Ienumerator OnDamage() : 피격설정, 레이어 수정, Enemy 생성, Count, 수류탄 피격효과 설정

@@ -1,0 +1,9 @@
+Bullet
+
+- OnCollisionEnter() : Rock이 바닥에 닿을경우 3초 후 파괴
+- OnTriggerEnter() : 벽에 닿을경우 바로 파괴
+
+Follow
+
+- Update() : Target의 위치 + Offset
+

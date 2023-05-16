@@ -1,0 +1,21 @@
+Player
+- GetInput() : 상호작용 키 연결
+- Move() : 움직임 설정
+- Turn() : 키보드에 의한 회전 및 마우스 클릭 위치 설정
+- Jump() : 점프 제한사항 설정
+- Grenade() : 수류탄 소지시와 없을경우 구분하여 작동
+- Attack() : 장착한 무기에 따라 공격
+- Reload() : Melee이 아닐경우 재장전
+- ReloadOut() : 재장전 시 작동사항
+- Dodge() : 회피
+- DodgeOut() : 작치시 속도감소
+- Swap() : 무기 Swap 및 제한사항
+- SwapOut() : 
+- Interation() : 주변 Object에 따른 상호작용
+- FreezeRotation() : 회전백터 조절
+- StopToWall() : 벽과 충돌방지
+- OnCollisionEnter() : 바닥과 충돌시 Jump = false
+- OnTriggerEnter() : Item, EnemyBullet 상호작용
+- IEnumerator OnDamage() : 피격효과
+- OnDie() : 사망처리
+- OnTriggerExit() : 중복작동 방지

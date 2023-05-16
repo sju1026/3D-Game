@@ -1,0 +1,6 @@
+Boss
+
+- Think() : 기믹 사의의 시간설정과 랜덤기믹설정
+- IEnumerator MissileShot() : 미사일 발사 위치별 미사일 발사 설정 후 Think로
+- IEnumerator  RockShot() : BigShot설정 및 Think
+- IEnumerator  Taunt() : 점프공격 후 Think()

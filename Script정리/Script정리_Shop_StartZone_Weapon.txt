@@ -1,0 +1,16 @@
+Shop
+
+- Enter() : UI 위치고정
+- Exit() : 애니메이션 및 UI호출
+- Buy() : index의 price에 맞춰 Player가 가지고 있는 Coin 감소
+- Talk() : Player의 소지 Coin에 따라 구매가 불가할 경우 대사 변경
+
+StartZone
+
+- OnTriggerEnter() : GameManager.StageStart 호출
+
+Weapon
+
+- Use() : Melee일 경우 안전성을 위해 StopCoroutine후 StartCoroutine, Range일 경우 StartCoroutine
+- Swing() : 공격모션 및 공격액션별 대기시간 설정
+- Shot() : 총알 생성 및 발사 속도, 랜덤 탄약케이스 배출 설정

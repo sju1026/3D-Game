@@ -1,0 +1,11 @@
+GameManager
+
+- Awake() : enemyList를 가져와 UI 설정(MaxScore)
+- GameStart() : 게임시작시 카메라 및 패널설정
+- GameOver() : 게임오버시 처음화면으로 전환
+- Restart() : 씬 초기화
+- StageStart() : UI설정 및 InBattle 호출
+- StageEnd() : 초기화 및 zone=false, stage 증가
+- IEnumerator InBattle() : 5단위 보스stage설정, UI에서 enemy count 증가, zone에서 enemy 생성, count가 0일경우 초기화, StageEnd호출
+- Update() : Time 증가
+- LateUpdate() : 상단, 플레이어, 무기, 보스, 몬스터 숫자, 보스 체력 UI 설정
